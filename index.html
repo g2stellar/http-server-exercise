@@ -10,6 +10,16 @@
         font-weight: bold;
       }
     </style>
+    <script>
+      function clickHandler() {
+        const box = document.getElementById("box");
+        const p = document.createElement("p");
+        // <p></p>
+        p.innerText = "Added by JS";
+        // <p>Added by JS</p>
+        box.appendChild(p);
+      }
+    </script>
   </head>
   <body>
     <h1>Hello HTML</h1>
@@ -17,5 +27,7 @@
       My first
       <a href="https://html.spec.whatwg.org/multipage/">HTML</a>
     </p>
+    <button onClick="clickHandler()">JS</button>
+    <div id="box"></div>
   </body>
 </html>
